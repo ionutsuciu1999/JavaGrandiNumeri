@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Ionut Suciu</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1>LA LEGGE DEI GRANDI NUMERI</h1>
+          <h2>Progetto di realtà by Ionut Suciu</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Presentazione</a></li>
+          <li><a href="simulazione.html">Simulazione</a></li>
+          <li class="selected"><a href="grafici.html">Grafici</a></li>
+          <li><a href="programma.html">Programma</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="content">
+        <h1>Possiamo creare dei grafici con i dati ottenuti per osservare visivamente la legge die grandi numeri</h1>
+        <p>Il primo grafico permette di visualizzare come l'errore (cioè di quanto i risultati si allontanano dalla probabilità teorica del 50%) tende ad aumenta quando i lanci tendono ad un numero infinito.</p>
+		<img src="style/errore1.PNG" alt="grafico1" />
+		<p>Per realizzarlo prendiamo i dati della colonna evidenziata in giallo, che mostra quante volte in più o quante volte in meno la Testa si è allontanata o avvicinata al valore teorico. Selezionandola insieme al numero di lanci possiamo creare in Excel il seguente grafico.</p>
+		<img src="style/errore1selezione.PNG" alt="DiffTesta" />
+		<p><hr></p>
+		<p>Il secondo grafico permette di visualizzare lo stesso errore del primo grafico ma questa volta in proporzione al numero di lanci fatti. Se su 10 lanci escono 7 Teste, queste si sono discostate di 2 rispetto alla probabilità che è 5, se però su 1.000 lanci escono 508 queste si sono discostate di 8 rispetto alla probabilità che è 500. Nel primo esempio il discostamento è di 2/10 cioè 20% mente nel second è di 8/1000 cioè 0.8%. Ci si avvicina perciò sempre di più ad un errore sempre piu piccolo.</p>
+		<img src="style/errore2.PNG" alt="grafico1" />
+		<p>Per realizzarlo dobbiamo creare 2 nuove colonne, la prima è la percentuale delle Teste, la seconda è la percentuale delle teste meno il 50%. Ecco come si calcolano:</p>
+		<img src="style/calcolopercentualeteste.PNG" alt="grafico1" />
+		<img src="style/percentualetestemeno50.PNG" alt="grafico1" />
+		<p><br>Selezionamo poi la colonna dei lanci e la colonna della percentuale delle teste meno il 50%, ed inseriamo il grafico su Excel.</p>
+		<img src="style/errore2selezione.PNG" alt="errore2selezione" />
+
+		<p><br><strong>ATTENZIONE: Una volta fatti i grafici asscurarsi di salvare il File con estensione .XLSX e NON .CSV SE NO I GRAFICI NON VERRANNO SALVATI!</strong></p>
+		<img src="style/xlsxsalvailgraficoCSVno.PNG" alt="errore2selezione" />
+	  </div>
+    </div>
+  </div>
+</body>
+</html>
